@@ -27,6 +27,11 @@ func init() {
 }
 
 type Config struct {
+	Db struct {
+		User     string `yaml:"user"`
+		Passwrod string `yaml:"password"`
+	} `yaml:"db"`
+
 	Redis struct {
 		Address  string `yaml:"address"`
 		Passwrod string `yaml:"password"`
